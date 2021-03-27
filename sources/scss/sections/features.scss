@@ -1,0 +1,124 @@
+.features {
+    &__container {
+        @media (min-width: $breakpoint)
+        {
+            max-width: 114rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .features__illustration {
+                width: 50%;
+                img {
+                    width: auto;
+                }
+            }
+
+            .features__text {
+                width: 49%;
+            }
+        }
+
+        @media (min-width: 1200px)
+        {
+            max-width: 144rem;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+    }        
+    
+    &--left {
+        padding-top: 7rem;
+        .features__container {
+            @media (min-width: $breakpoint) {
+                .features__illustration {
+                    order: 2;
+                    transform: translateX(10%);
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .features__text {
+                    padding-left: 16.5rem;
+                }
+            }
+        }
+    }
+
+    &--right {
+        padding-top: 7rem;
+        .features__container {
+            @media (min-width: $breakpoint) {
+                .features__illustration {
+                    transform: translateX(-25%);
+                }
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .features__text {
+                padding-right: 16.5rem;
+            }
+        }
+    }
+
+    &__illustration {
+        margin-bottom: 4rem;
+        img {
+            width: 100%;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 4rem;
+        font-size: 2.7rem;
+
+        @media (min-width: $breakpoint)
+        {
+            position: absolute;
+            top: 15rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 3.6rem;
+        }
+    }
+
+    &__item {
+        margin-bottom: 4rem;
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+        &__heading {
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            line-height: 1.2;
+
+            @media (min-width: $breakpoint)
+            {
+                font-size: 2.2rem;
+            }
+        }
+
+        &__text {
+            line-height: 1.8;
+            font-weight: $font-weight-light;
+        }
+    }
+
+    &--right {
+        .features__illustration {
+            picture {
+                display: flex;
+                justify-content: center;
+
+                img{
+                    width: 136%;
+                }
+            }
+        }
+        .features__item {
+            padding-left: .8rem;
+            padding-right: .8rem;
+        }        
+    }
+}

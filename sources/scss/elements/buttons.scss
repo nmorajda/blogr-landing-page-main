@@ -1,0 +1,114 @@
+button,
+.btn {
+    position: relative;
+    display: inline-block;
+    padding: .8rem 1.6rem;
+    font-family: $font-family-secondary;
+    font-size: 1.4rem;
+    font-weight: $font-weight-semi-bold;
+    line-height: 2;
+    letter-spacing: 0.25px;
+    color: $dark;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 100vw;
+    cursor: pointer;
+    
+    transition: all .3s, outline 0s;
+}
+
+.btn {
+    &--primary {
+        color: $light;
+        background-color: $primary;
+        border-color: $primary;
+
+        &:hover {
+            color: $primary;
+            background-color: $light;
+        }
+    };
+
+    &--secondary {
+        color: $light;
+        background-color: $secondary;
+        border-color: $secondary;
+
+        &:hover {
+            color: $secondary;
+            background-color: $light;
+        }
+    };
+
+    &--dark {
+        &:hover {
+            color: $light;
+            background-color: $dark;
+        }
+    }
+
+    &--light {
+        color: $primary;
+        border-color: $light;
+        background-color: $light;
+        &:hover {
+            color: $light;
+            background-color: $very-light-red;
+            border-color: $very-light-red;
+        }
+    }
+
+    &--link {
+        color: $dark;
+        background-color: transparent;
+        border: none;
+    }
+
+    &--transparent {
+        color: $light;
+        border-color: $light;
+        background-color: transparent;
+        &:hover {
+            color: $primary;
+            background-color: $light;
+            border-color: $light;
+        }
+    }    
+
+
+    
+    &-hamburger {
+        height: 1.8rem;
+        padding: 0;
+        outline: none;
+        border: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        span {
+            width: 32px;
+            height: 2px;
+            background-color: $light;
+            transition: .3s ease-in-out
+        }
+
+        &--open {
+            
+            span {
+                
+                &:nth-child(1) {
+                    transform: rotate(45deg) translate(5px, 6px);
+                }
+
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+
+                &:nth-child(3) {
+                    transform: rotate(-45deg) translate(5px, -6px);
+                }
+            }
+        }
+    }
+}

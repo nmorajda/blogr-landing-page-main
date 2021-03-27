@@ -1,0 +1,184 @@
+{
+  "head": {
+    "html": {
+      "attrs": {
+        "class": "no-js",
+        "lang": "en",
+        "dir": "ltr"
+      }
+    },
+    "robots": "",
+    "title": "Frontend Mentor | Insure Landing Page",
+    "description": "Frontend Mentor | Insure Landing Page",
+    "fonts": "https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap",
+    "styles": [],
+    "scripts": []
+  },
+
+  "brand": {
+    "link": {
+      "attrs": {
+        "href": "/index.html",
+        "title": "Frontend Mentor | Insure Landing Page",
+        "class": "logo__link"
+      }
+    },
+    "img": {
+      "attrs": {
+        "src": "images/logo.svg",
+        "class": "logo__img",
+        "alt": "Logo"
+      }
+    }
+  },
+
+  "menu": {
+    "mainMenu": {
+      "items": [
+        {
+          "anchor": "Product",
+          "dropdown": [
+            {
+              "anchor": "Overview",
+              "attrs": { "href": "#"}
+            },
+            {
+              "anchor": "Pricing",
+              "attrs": { "href": "#"}
+            },
+            {
+              "anchor": "Marketplace",
+              "attrs": { "href": "#"}
+            },
+            {
+              "anchor": "Features",
+              "attrs": { "href": "#"}
+            },
+            {
+              "anchor": "Integrations",
+              "attrs": { "href": "#"}
+            } 
+          ]
+        },
+        {
+          "anchor": "Company",
+          "dropdown": [
+            {
+              "anchor": "About",
+              "attrs": { "href": "#"}
+            },
+            {
+              "anchor": "Team",
+              "attrs": { "href": "#"}
+            },
+            {
+              "anchor": "Blog",
+              "attrs": { "href": "#"}
+            },
+            {
+              "anchor": "Careers",
+              "attrs": { "href": "#"}
+            }            
+          ]
+        },
+        {
+          "anchor": "Connect",
+          "dropdown": [
+            {
+              "anchor": "Contact",
+              "attrs": { "href": "#"}
+            },
+            {
+              "anchor": "Newsletter",
+              "attrs": { "href": "#"}
+            },
+            {
+              "anchor": "LinkedIn",
+              "attrs": { "href": "#"}
+            }
+          ]
+        }
+      ],
+      "buttons": [
+        {
+          "text": "Login",
+          "attrs": {
+            "class": "btn btn--link header__btn"
+          }
+        },
+        {
+          "text": "Sign Up",
+          "attrs": {
+            "class": "btn btn--light header__btn"
+          }
+        }        
+      ]
+    }
+  },
+  
+  "hero": {
+    "heading": "A modern publishing platform",
+    "subheading": "Grow your audience and build your online brand",
+    "buttons": [
+      {
+        "text": "Start for Free",
+        "attrs": {
+          "class": "btn btn--light hero__btn"
+        }
+      },
+      {
+        "text": "Learn More",
+        "attrs": {
+          "class": "btn btn--transparent hero__btn"
+        }
+      }
+    ]
+  },
+
+  "features": {
+    "heading": "Designed for the future",
+    "subheading": "Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.",
+    "items": [
+      {
+        "heading": "Introducing an extensible editor",
+        "text": " Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog."
+      },
+      {
+        "heading": "Robust content management",
+        "text": "Flexible content management enables users to easily move through posts. Increase the usability of your blog by adding customized categories, sections, format, or flow. With this functionality, you’re in full control."
+      },
+      {
+        "heading": " Free, open, simple",
+        "text": "Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn."
+      },
+      {
+        "heading": "Powerful tooling",
+        "text": "Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites."
+      }
+    ]
+  },
+
+  "banner": {
+    "heading": "State of the Art Infrastructure",
+    "text": "With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. This ensures your site will load instantly, no matter where your readers are, keeping your site competitive."
+  },
+
+  "socials": [
+    {
+      "name": "Facebook",
+      "href": "https://www.facebook.com",
+      "title": "",
+      "id": "#icon-facebook"
+    },
+    {
+      "name": "Twitter",
+      "href": "https://www.twitter.com",
+      "title": "",
+      "id": "#icon-twitter"
+    }
+  ],
+
+  "footer": {
+    "copyright": "Challenge by <a href=\"https://www.frontendmentor.io\">Frontend Mentor</a>. Coded by <a href=\"https://github.com/nmorajda\">N. Morajda</a>"
+  }
+}

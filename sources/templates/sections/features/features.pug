@@ -1,0 +1,35 @@
+mixin features({ features, banner } = data)
+
+    section.section.features.features--left
+        h2.section__heading.features__heading #{features.heading}
+        .container.features__container
+            .features__illustration 
+                picture 
+                    source(media="(min-width: 800px)" srcset=pathToFile+"images/illustration-editor-desktop.svg")
+                    source(media="(max-width: 799px)" srcset=pathToFile+"images/illustration-editor-mobile.svg")
+                    img(src=pathToFile+'images/illustration-editor-desktop.svg', alt="Editor")
+            .features__text
+                each item in features.items.slice(0, 2) 
+                    .features__item 
+                        h3.features__item__heading #{item.heading}
+                        p.features__item__text #{item.text}
+    section.section.banner
+        .container.banner__container
+            .banner__illustration
+                img(src=pathToFile+"images/illustration-phones.svg", alt="Phones")
+            .banner__text-content
+                h2.section__heading.banner__heading #{banner.heading}
+                p.banner__text #{banner.text}
+
+    section.section.features.features--right
+        .container.features__container
+            .features__illustration 
+                picture 
+                    source(media="(min-width: 800px)" srcset=pathToFile+"images/illustration-laptop-desktop.svg")
+                    source(media="(max-width: 799px)" srcset=pathToFile+"images/illustration-laptop-mobile.svg")
+                    img(src=pathToFile+'images/illustration-laptop-desktop.svg', alt="Laptop")
+            .features__text
+                each item in features.items.slice(2, 4) 
+                    .features__item 
+                        h3.features__item__heading #{item.heading}
+                        p.features__item__text #{item.text}

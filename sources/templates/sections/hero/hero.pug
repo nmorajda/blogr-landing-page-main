@@ -1,0 +1,11 @@
+mixin hero({ hero } = data)
+    section.hero
+        .hero__img_wrapper 
+            img(src=pathToFile+'images/bg-pattern-intro.svg', alt="Illustration")
+        .container.hero__container
+            h1.hero__heading #{hero.heading}
+            p.hero__subheading #{hero.subheading}
+            .hero__buttons
+                each button in hero.buttons
+                    +button(button)
+                        | #{button.text}

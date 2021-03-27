@@ -1,0 +1,41 @@
+$breakpoint: 800px;
+$container-max-width: 114rem;
+
+// colors
+$light-red: hsl(356, 100%, 66%);
+$very-light-red: hsl(355, 100%, 74%); // hover
+$very-dark-blue: hsl(208, 49%, 24%); // headings
+
+$primary: $light-red;
+$primary-light: $very-light-red;
+$secondary: $very-light-red;
+$light: white;
+$grey: #c8c8cb;
+$grey-medium: #ededed;
+$grey-light: #f7f7f7;
+$dark: $very-dark-blue;
+
+
+$gradient-very-light-red: hsl(13, 100%, 72%);
+$gradient-light-red: hsl(353, 100%, 62%);
+$gradient-very-dark-blue: hsl(237, 18%, 21%);
+$gradient-very-desaturated-blue: hsl(237, 23%, 32%);
+
+$intro-bg-gradient-mobile: linear-gradient(180deg, rgba($gradient-very-light-red,1) 0%, rgba($gradient-light-red,1) 100%);
+$intro-bg-gradient-desktop: linear-gradient(135deg, rgba($gradient-very-light-red,1) 0%, rgba($gradient-light-red,1) 100%);
+$body-bg-gradient: linear-gradient(135deg, rgba($gradient-very-dark-blue,1) 0%, rgba($gradient-very-desaturated-blue,1) 100%);
+
+$footer-link-color: $grey;
+
+$border-color: $dark;
+$border-radius-sm: 3px;
+
+// Overpass:wght@300;600&family=Ubuntu:wght@400;500;700
+$font-family-primary: 'Overpass', sans-serif;
+$font-family-secondary: 'Ubuntu', sans-serif;
+$font-size-primary: 1.6rem;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;

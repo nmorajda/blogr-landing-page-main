@@ -1,0 +1,93 @@
+.hero {
+    position: relative;
+    background: $intro-bg-gradient-mobile;
+    border-bottom-left-radius: 10rem;
+    overflow: hidden;
+
+    @media (min-width: $breakpoint)
+    {
+        background: $intro-bg-gradient-desktop;
+    }
+    .hero__img_wrapper {
+
+        img {
+            position: absolute;
+            bottom: -60%;
+            left: -75%;
+            width: 300%;
+            @media (min-width: $breakpoint) {
+                top: -226%;
+                left: -11%;
+                width: auto;
+            }
+        }
+
+    }
+
+    @media (min-width: $breakpoint)
+    {
+        
+    }
+
+    &__container {
+        position: relative;
+        min-height: 60rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index:3;
+    }
+
+    &__heading {
+        max-width: 26rem;
+        margin-bottom: 1.6rem;
+        font-size: 3rem;
+        letter-spacing: -.25px;
+        line-height: 1.4;
+        color: $light;
+
+        @media (min-width: $breakpoint)
+        {
+            max-width: initial;
+            letter-spacing: initial;
+            font-size: 4.5rem;
+        }
+
+        @media (min-width: 1200px)
+        {
+            padding-top: 10rem;
+            font-size: 6rem;
+        }
+    }
+    
+    &__subheading {
+        max-width: 26rem;
+        margin-bottom: 4.5rem;
+        font-size: 1.5rem;
+        line-height: 1.8;
+        color: $light;
+
+        @media (min-width: $breakpoint)
+        {
+            max-width: initial;
+            font-size: 1.8rem;
+        }
+
+        @media (min-width: 1200px)
+        {
+            font-size: 2rem;
+        }
+    }
+
+    &__buttons {
+
+        button {
+            min-width: 13rem;
+            &:first-child {
+                margin-right: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
